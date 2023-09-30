@@ -51,9 +51,10 @@ def test_random_list():
     """
 
     # TODO создайте список
- #   l = [random.randint(1, 100)]
+    l = [random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),]
     print(l)
     l.sort()
+    print(l)
     assert len(l) == 10
     assert l[0] < l[-1]
 
@@ -80,7 +81,8 @@ def test_dicts():
     first = ["a", "b", "c", "d", "e"]
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
-    d = {}
-
+    d = dict(zip(first, second))
+    print(d.items())
+    print(d.values())
     assert isinstance(d, dict)
     assert len(d) == 5
