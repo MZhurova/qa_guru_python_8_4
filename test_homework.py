@@ -41,10 +41,13 @@ def test_circle():
     # TODO сосчитайте площадь
     area = math.pi * (r ** 2)
     assert area == 1661.9025137490005
+    print("\n")
+    print("Площадь круга равна "+str(area))
 
     # TODO сосчитайте длину окружности
     length = 2 * math.pi * r
     assert length == 144.51326206513048
+    print("Длина круга равна "+str(length))
 
 
 def test_random_list():
@@ -54,9 +57,7 @@ def test_random_list():
 
     # TODO создайте список
     l = [random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),random.randint(1, 100),]
-    print(l)
     l.sort()
-    print(l)
     assert len(l) == 10
     assert l[0] < l[-1]
 
